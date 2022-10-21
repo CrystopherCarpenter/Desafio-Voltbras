@@ -6,47 +6,40 @@ Especificamente, esta propulsão de energia deve ser provinda de combustível nu
 Se a inserção do combustível for realizada num planeta de baixa gravidade, acontece a fissão do combustível nuclear e perde-se bastante potencial energético.
 Por isso é necessário realizar o abastecimento das naves em planetas com alta gravidade, nos quais chega a ser 100 vezes mais eficiente o abastecimento.
 
-Here you found
+Essa API tem o objetivo de ajudar nesse trabalho, descobrindo em quais planetas a Voltbras pode instalar seus novos postos de carregamento e otimizar a experiência de recarga para os viajantes espaciais, utilizando a API de exoplanetas da NASA para encontrar aqueles que tem gravidade adequada.
 
--   User ranked youtube music videos
+Alem disso a API possibilita o controle da instalação das estações de recarga e da execução da prõpria recarga.
 
--   e2e, integration and unit tests
+## Como Executar
 
-## How to run
-
-### Requirements
+### Requisitos
 
 ### [npm](https://www.npmjs.com/)
 
 ### [postgreSQL](https://www.postgresql.org/)
 
-1. Clone this repository and setup the [front-end](https://github.com/CrystopherCarpenter/SingMeASong)
-2. Install the dependencies
+1. Clone este repositório e setup (https://github.com/CrystopherCarpenter/Desafio-Voltbras)
+2. Instale as dependências
 
 ```bash
 npm i
 ```
 
-3. set your .env file
+3. Crie seu arquivo .env, utilizando o .env.example como referência
 
-4. Create database with prisma
+4. Crie o banco da dados com o Prisma
 
--   run on terminal
+-   Rode os seguintes comandos no terminal, na pasta raíz do projeto
 
 ```bash
 npx prisma init
 npx prisma migrate dev
 ```
 
-5. Run the project with
+5. Rode o projeto com
 
 ```bash
-npm start
+npm run start
 ```
 
-6. Run tests for the project
-
-```bash
-npm run test-coverage (backend/jest)
-
-```
+6. Acesse http://localhost:4000/ no seu navegador para poder testar a API
