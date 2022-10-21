@@ -54,7 +54,7 @@ npm run start
 
 ### Mutations:
 
--   installStation: essa Mutation recebe como parâmetro um objeto no formato { name: "nome de exemplo", planet: "planeta de exemplo" } e adiciona uma estação ao planeta escolhido.
+-   installStation: essa Mutation recebe como parâmetro um objeto no formato { name: "nome de exemplo", planetName: "planeta de exemplo" } e adiciona uma estação ao planeta escolhido.
 -   createUser: recebe um "name" e cria um usuário.
 -   recharge: recebe um objeto no formato {stationId, userId, finishAt} e inicia uma recarga, finalizando no horário estipulado em "finishAt".
 
