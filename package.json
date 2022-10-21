@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "tsnd --respawn --transpile-only src/server.ts",
+        "start": "tsnd --respawn --transpile-only src/server.ts",
         "dev:migrate": "npx prisma migrate dev"
     },
     "keywords": [],
