@@ -42,4 +42,27 @@ npx prisma migrate dev
 npm run start
 ```
 
-6. Acesse http://localhost:4000/ no seu navegador para poder testar a API
+6. Acesse http://localhost:4000/ no seu navegador para poder usar a API
+
+## Queries e Mutations
+
+### Queries:
+
+-   suitablePlanets: essa Query não recebe nenhum dado e retorna a lista atualizada com os planetas que podem receber uma estação de recarga.
+-   stations: não recebe nenhum dado e retorna lista de todas as estações instaladas.
+-   user: recebe um "name" como input, verifica se existe um usuário com esse nome, retornando as informações desse usuário, caso ele exista.
+
+### Mutations:
+
+-   installStation: essa Mutation recebe como parâmetro um objeto no formato { name: "nome de exemplo", planet: "planeta de exemplo" } e adiciona uma estação ao planeta escolhido.
+-   createUser: recebe um "name" e cria um usuário.
+-   recharge: recebe um objeto no formato {stationId, userId, finishAt} e inicia uma recarga, finalizando no horário estipulado em "finishAt".
+
+## Tecnologias aplicadas
+
+<a href="https://nodejs.org/en/" title="NodeJS"><img src="https://img.shields.io/badge/-NodeJS-&?style=for-the-badge&logo=nodedotjs&color=black" alt="Node logo" /></a>
+<a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://img.shields.io/badge/-Typescript-&?style=for-the-badge&logo=typescript&color=black" alt="Typescript logo" /></a>
+<a href="https://www.postgresql.org/" title="Postgres"><img src="https://img.shields.io/badge/-PostgreSQL-&?style=for-the-badge&logo=postgresql&color=black" alt="Postgres logo" /></a>
+<a href="https://www.prisma.io/" title="Prisma"><img src="https://img.shields.io/badge/-prisma-&?style=for-the-badge&logo=prisma&color=black" alt="Prisma logo" /></a>
+<a href="https://graphql.org/" title="GraphQL"><img src="https://img.shields.io/badge/-graphql-&?style=for-the-badge&logo=graphql&color=black" alt="GraphQL logo" /></a>
+<a href="https://www.apollographql.com/" title="Apollo"><img src="https://img.shields.io/badge/-apollo graphql-&?style=for-the-badge&logo=apollographql&color=black" alt="Apollo logo" /></a>
