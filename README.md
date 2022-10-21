@@ -8,7 +8,7 @@ Por isso é necessário realizar o abastecimento das naves em planetas com alta 
 
 Essa API tem o objetivo de ajudar nesse trabalho, descobrindo em quais planetas a Voltbras pode instalar seus novos postos de carregamento e otimizar a experiência de recarga para os viajantes espaciais, utilizando a API de exoplanetas da NASA para encontrar aqueles que tem gravidade adequada.
 
-Alem disso a API possibilita o controle da instalação das estações de recarga e da execução da prõpria recarga.
+Alem disso a API possibilita o controle da instalação das estações de recarga e da execução da recarga.
 
 ## Como Executar
 
