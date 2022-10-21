@@ -1,8 +1,8 @@
 import { prisma } from '../config/database';
 import { UserModel } from '../dtos/models/user';
 
-async function create(user: Partial<UserModel>) {
-    await prisma.user.create({
+function create(user: Partial<UserModel>) {
+    return prisma.user.create({
         data: user,
     });
 }
